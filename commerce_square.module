@@ -1,0 +1,25 @@
+<?php
+
+/**
+ * @file
+ * Module file for the Commerce Square Payment Method module.
+ */
+
+
+/**
+ * Implements hook_commerce_payment_method_info().
+ */
+function commerce_square_commerce_payment_method_info() {
+  $payment_methods = array();
+
+  $payment_methods['square'] = array(
+    'base' => 'commerce_square',
+    'title' => t('Square'),
+    'checkout' => FALSE,
+    'description' => t('A payment method to record payments made with Square.'),
+    'active' => TRUE,
+    'file' => 'commerce_square.payment.inc',
+  );
+
+  return $payment_methods;
+}

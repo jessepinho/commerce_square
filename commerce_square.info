@@ -1,0 +1,6 @@
+name = Commerce - Square Payment Method
+description = Provides a payment method for recording payments made with Square.
+package = Commerce (contrib)
+dependencies[] = commerce
+dependencies[] = commerce_payment
+core = 7.x
